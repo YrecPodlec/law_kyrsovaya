@@ -1,0 +1,8 @@
+.document { border-bottom: 1px solid #e5ebf3; &:last-child { border-bottom: 0; } summary { display: flex; gap: 14px; align-items: center; padding: 18px 22px; list-style: none; cursor: pointer; min-height: 78px; &::-webkit-details-marker { display: none; } &:hover { background: #f6f8fd; } } &[open] > summary { background: #eef3fd; } &[open] .chevron { transform: rotate(180deg); } }
+.icon { color: #6282bc; }
+.name { flex: 1; min-width: 0; strong { display: block; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; } small { display: block; color: #7b899e; font-size: 12px; margin-top: 5px; } }
+.date { color: #7b899e; font-size: 12px; white-space: nowrap; }
+.chevron { color: #8191aa; }
+.preview { padding: 24px; background: #fcfdff; border-top: 1px solid #e5ebf3; h3 { font-size: 17px; margin-top: 14px; } p { margin-top: 16px; white-space: pre-wrap; line-height: 1.85; color: #52627b; max-width: 760px; } }
+.label { font-size: 11px; color: #7c8ba1; }
+@media (max-width: 620px) { .date { display: none; } .document summary { padding: 16px; gap: 10px; } .preview { padding: 20px 16px; } }

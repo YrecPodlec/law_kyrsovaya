@@ -1,0 +1,7 @@
+.thread { border-bottom: 1px solid #e5ebf3; &:last-child { border-bottom: 0; } summary { display: flex; align-items: center; gap: 14px; padding: 20px 22px; list-style: none; cursor: pointer; &::-webkit-details-marker { display: none; } &:hover { background: #f6f8fd; } > time { color: #7b899e; font-size: 12px; white-space: nowrap; } } &[open] > summary { background: #eef3fd; } &[open] .chevron { transform: rotate(180deg); } }
+.icon { color: #6282bc; }
+.heading { flex: 1; min-width: 0; strong { display: block; font-size: 14px; font-weight: 600; } small, > span { display: block; color: #7b899e; font-size: 12px; margin-top: 5px; } }
+.chevron { color: #8191aa; }
+.messages { padding: 0 24px; background: #fcfdff; }
+.message { padding: 24px 0; border-bottom: 1px solid #e5ebf3; &:last-child { border-bottom: 0; } header { display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; } h3 { font-size: 12px; overflow-wrap: anywhere; } time { color: #8190a5; font-size: 11px; } p { margin-top: 16px; color: #52627b; line-height: 1.85; white-space: pre-wrap; } }
+@media (max-width: 620px) { .thread summary { padding: 16px; gap: 10px; > time { display: none; } } .messages { padding: 0 16px; } }

@@ -1,0 +1,6 @@
+.pageHeading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 25px; h2 { font-size: 22px; font-weight: 600; letter-spacing: -.5px; margin-top: 5px; } }
+.eyebrow { font-size: 11px; color: #7d8da6; letter-spacing: 1.6px; text-transform: uppercase; }
+.subtitle { color: #8693a7; font-size: 12px; margin-top: 4px; }
+.timeline { margin-top: 24px; }
+.footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #8b98ab; font-size: 12px; margin-top: 24px; span:first-child { display: inline-flex; align-items: center; gap: 7px; } }
+@media (max-width: 540px) { .timeline { margin-top: 18px; } }

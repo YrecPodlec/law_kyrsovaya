@@ -1,0 +1,6 @@
+.card { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: 28px; padding: 28px; border-top: 3px solid #416ed3; }
+.content { min-width: 0; h2 { font-size: 18px; } }
+.description { margin-top: 14px; font-size: 14px; color: #617086; line-height: 1.85; }
+@media (max-width: 1200px) { .card { grid-template-columns: minmax(0, 1fr) 190px; gap: 22px; padding: 24px; } }
+@media (max-width: 1000px) { .card { grid-template-columns: 1fr; } }
+@media (max-width: 540px) { .card { padding: 22px 18px; } }

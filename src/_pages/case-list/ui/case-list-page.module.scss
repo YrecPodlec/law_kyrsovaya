@@ -1,0 +1,8 @@
+.heading { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; margin-bottom: 26px; h1 { font-size: 28px; letter-spacing: -.5px; } p { color: #7d8aa0; margin-top: 8px; font-size: 13px; } }
+.list { display: grid; gap: 18px; }
+.caseCard { padding: 26px; h2 { margin-top: 20px; font-size: 22px; a { display: inline-flex; align-items: baseline; gap: 10px; text-decoration: none; &:hover { color: #315dc5; text-decoration: underline; } } } }
+.meta { display: flex; justify-content: space-between; gap: 14px; align-items: center; > span:first-child { display: inline-flex; align-items: center; gap: 8px; color: #7c8aa1; font-size: 12px; } }
+.client { color: #76859b; font-size: 13px; margin-top: 10px; }
+.facts { display: flex; flex-wrap: wrap; gap: 26px 48px; border-top: 1px solid #e5ebf3; margin-top: 24px; padding-top: 20px; span { display: block; color: #8290a4; font-size: 12px; } strong { display: block; font-size: 13px; font-weight: 600; margin-top: 6px; } }
+.note { color: #8b98ac; font-size: 12px; margin-top: 24px; }
+@media (max-width: 540px) { .caseCard { padding: 20px; h2 { font-size: 20px; } } }

@@ -1,0 +1,4 @@
+.context { margin-bottom: 26px; }
+.client { color: #7c8ba1; font-size: 13px; margin-top: 12px; }
+.navigation { display: flex; gap: 28px; margin-top: 25px; border-bottom: 1px solid #d7e0ee; a { display: flex; align-items: center; gap: 8px; min-height: 50px; padding: 12px 1px; border-bottom: 2px solid transparent; text-decoration: none; font-size: 13px; color: #78879e; &[aria-current="page"] { color: #315dc5; border-bottom-color: #315dc5; font-weight: 600; } &:hover { color: #315dc5; } > span { font-size: 11px; border-radius: 5px; background: #e5ebf7; padding: 2px 7px; } } }
+@media (max-width: 540px) { .navigation { gap: 17px; a { gap: 5px; font-size: 12px; > span { padding: 2px 5px; } } } }

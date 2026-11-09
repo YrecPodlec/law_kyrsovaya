@@ -1,0 +1,6 @@
+.heading {
+  h1 { max-width: 720px; margin-top: 20px; font-size: clamp(25px, 2.7vw, 34px); line-height: 1.25; font-weight: 650; letter-spacing: -.8px; }
+  p { margin-top: 15px; color: #617086; line-height: 1.8; max-width: 740px; font-size: 14px; }
+}
+.meta { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.number { display: inline-flex; align-items: center; gap: 8px; color: #617086; font: 12px Consolas, monospace; letter-spacing: .5px; }

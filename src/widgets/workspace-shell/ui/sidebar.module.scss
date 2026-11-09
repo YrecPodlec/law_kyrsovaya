@@ -1,0 +1,30 @@
+.sidebar { position: sticky; top: 0; height: 100dvh; display: flex; flex-direction: column; background: #172942; color: #bcc9dd; padding: 30px 18px 22px; }
+.brand { display: flex; gap: 12px; align-items: center; text-decoration: none; padding: 0 10px; color: #fff; strong { display: block; font-size: 18px; letter-spacing: 2.8px; } small { display: block; margin-top: 3px; font-size: 12px; color: #9fb1cd; } }
+.logo { display: grid; place-items: center; width: 40px; height: 44px; background: #304d77; border: 1px solid #48638a; border-radius: 11px; }
+.caption { padding: 0 13px; margin-top: 47px; margin-bottom: 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 1.3px; color: #8298b6; }
+.navigation {
+  display: flex; flex-direction: column; gap: 7px;
+  a { display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 12px 14px; border-radius: 8px; font-size: 13px; text-decoration: none; transition: background .15s; &:hover { background: #263c5b; color: #fff; } }
+  .primary { background: #315dc5; color: #fff; box-shadow: 0 4px 12px #0d1a2e20; }
+}
+.count { margin-left: auto; font-size: 12px; background: #ffffff1f; border-radius: 4px; padding: 2px 5px; }
+.education {
+  margin-top: auto; padding: 18px 14px; background: #213650; border: 1px solid #314762; border-radius: 10px;
+  svg { color: #b4c7e7; margin-bottom: 9px; }
+  strong { display: block; color: #e0e9f7; font-size: 12px; }
+  p { font-size: 12px; line-height: 1.8; margin-top: 8px; color: #9eb0ca; }
+  > span { display: block; font-size: 11px; margin-top: 16px; color: #8fa8cd; }
+}
+@media (max-width: 1100px) { .sidebar { padding-inline: 12px; } .brand { padding-inline: 6px; gap: 9px; } .brand strong { font-size: 16px; } }
+@media (max-width: 800px) {
+  .sidebar { position: static; height: auto; padding: 16px 20px; flex-direction: row; align-items: center; gap: 20px; justify-content: space-between; }
+  .caption, .education, .count { display: none; }
+  .brand { padding: 0; }
+  .navigation { flex-direction: row; gap: 5px; a { min-height: 40px; padding: 9px 11px; gap: 7px; font-size: 12px; } }
+}
+@media (max-width: 540px) {
+  .sidebar { flex-wrap: wrap; gap: 18px; padding: 18px 16px 12px; }
+  .brand { small { font-size: 12px; } }
+  .navigation { width: 100%; a { justify-content: center; flex: 1; } }
+}
+@media (prefers-reduced-motion: reduce) { .navigation a { transition: none; } }

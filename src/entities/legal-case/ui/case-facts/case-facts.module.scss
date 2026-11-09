@@ -1,0 +1,8 @@
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; margin: 28px 0 0; padding-top: 23px; border-top: 1px solid #e6ebf3; }
+.fact {
+  min-width: 0;
+  dt { display: flex; gap: 7px; align-items: center; color: #748196; font-size: 12px; }
+  dd { margin: 8px 0 0; color: #344259; font-size: 12px; font-weight: 600; overflow-wrap: anywhere; }
+}
+@media (max-width: 1050px) { .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 400px) { .facts { gap: 20px 12px; } .fact dd { font-size: 12px; } }
